@@ -7,9 +7,35 @@
   <title>Document</title>
 </head>
 <body>
-<p>gitTest</p>
+<p id = "start">gist_00</p>
+<canvas id="mycanvas" width="640" height="300"></canvas>
+
 <script>
-var now = new Date();
+
+window.onload = function(){
+  var canvas = document.getElementById('mycanvas');
+  var ctx = canvas.getContext('2d');
+  ctx.beginPath();
+  ctx.moveTo(200,10);
+  ctx.lineTo(210,100);
+  ctx.lineTo(10,100);
+  ctx.closePath();
+  ctx.stroke();
+
+}
+
+// window.onload = function(){
+//   var canvas = document.getElementById('mycanvas');
+//   var ctx = canvas.getContext('2d');
+//   ctx.beginPath();
+//   ctx.moveTo(60,10);
+//   ctx.lineTo(110,100);
+//   ctx.lineTo(10,60);
+//   ctx.closePath();
+//   ctx.stroke();
+// }
+
+
 </script>
 
 </body>
