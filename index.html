@@ -5,38 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+
+  <style media="screen">
+    .emphasis {
+      color: red;
+    }
+  </style>
+
 </head>
-<body>
-<p id = "start">gist_00</p>
-<canvas id="mycanvas" width="640" height="300"></canvas>
+<body style="height: 1500px;">
+  <div class="container">
 
-<script>
+  </div>
+<!-- <div id="outer" class="" style="width: 300px; height: 300px; padding: 100px; background: red;">
+  <div id="inner" class="" style="width: 100px; height: 100px; background: blue;">
 
-window.onload = function(){
-  var canvas = document.getElementById('mycanvas');
-  var ctx = canvas.getContext('2d');
-  ctx.beginPath();
-  ctx.moveTo(200,10);
-  ctx.lineTo(210,100);
-  ctx.lineTo(10,100);
-  ctx.closePath();
-  ctx.stroke();
+  </div>
+</div> -->
+<script type="text/javascript">
 
-}
+// var canvas = document.getElementById('mycanvas');
+// var ctx = canvas.getContext('2d');
 
 // window.onload = function(){
-//   var canvas = document.getElementById('mycanvas');
-//   var ctx = canvas.getContext('2d');
-//   ctx.beginPath();
-//   ctx.moveTo(60,10);
-//   ctx.lineTo(110,100);
-//   ctx.lineTo(10,60);
-//   ctx.closePath();
-//   ctx.stroke();
-// }
-
+//   var element = document.getElementById('btn');
+//   element.addEventListener('click',function(e){
+//     e.currentTarget.style.color = 'red';
+//   },false);
+// };
 
 </script>
+
+<script type="text/babel">
+
+  // const TodoList = () => {
+  //   return (
+  //     <ul>
+  //       <li>gist01</li>
+  //       <li>gist02</li>
+  //       <li>gist03</li>
+  //     </ul>
+  //   )
+  // }
+  //
+  // ReactDOM.render(
+  //   <TodoList />,
+  //   document.getElementById('content')
+  // );
+
+  var React = require('react');
+  var ReactDOM = require('react-dom');
+
+  ReactDOM.render(
+    <h1>Hello, world!</h1>,
+    document.getElementById('container')
+  );
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script> -->
+
 
 </body>
 </html>
